@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Earthquake Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Recent Earthquakes</h1>
+    
+    <!-- Filters -->
+    <div class="filters">
+      <input type="number" id="minMagnitude" placeholder="Min Magnitude" step="0.1">
+      <input type="text" id="locationFilter" placeholder="Location">
+      
+      <!-- Date Filters -->
+      <div class="date-filters">
+        <div class="date-filter">
+          <label for="startDate">Start Date:</label>
+          <input type="date" id="startDate">
+        </div>
+        
+        <div class="date-filter">
+          <label for="endDate">End Date:</label>
+          <input type="date" id="endDate">
+        </div>
+      </div>
+      
+      <button onclick="fetchEarthquakes()">Load Earthquakes</button>
+    </div>
+
+    <!-- Alerts Section -->
+    <div id="alert-section" style="display: none;">
+      <h2 id="alert-title"></h2>
+      <p id="alert-message"></p>
+      <h3>Safety Measures:</h3>
+      <ul id="safety-measures-list">
+        <li>Drop, Cover, and Hold On.</li>
+        <li>Stay away from windows and heavy furniture.</li>
+        <li>If you are outside, stay in an open area and away from buildings.</li>
+      </ul>
+    </div>
+    
+    <!-- Earthquake List -->
+    <div id="earthquake-list"></div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
