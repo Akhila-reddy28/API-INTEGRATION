@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #eef2f3;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  button {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .filters input, .filters button {
+    padding: 10px;
+    margin: 10px;
+    width: 180px;
+    border-radius: 5px;
+  }
+  
+  .date-filters {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+  
+  .date-filter {
+    width: 45%;
+  }
+  
+  .date-filter label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  #earthquake-list {
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  .earthquake {
+    padding: 15px;
+    margin: 10px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    border-left: 5px solid #4CAF50;
+  }
+  
+  .earthquake h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .earthquake p {
+    margin: 5px 0;
+  }
+  
+  /* Alert Section Styles */
+  #alert-section {
+    background-color: #ffe4e1;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    border: 2px solid red;
+  }
+  
+  #alert-section h2 {
+    color: red;
+  }
+  
+  #alert-section h2.yellow {
+    color: orange;
+  }
+  
+  #alert-section h2.green {
+    color: green;
+  }
+  
+  #alert-section ul {
+    list-style-type: disc;
+    text-align: left;
+    margin-left: 30px;
+  }
+  
+  #alert-section p {
+    font-weight: bold;
+  }
+  
